@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <label for="">Your ammount:</label>
+    <input type="number" name="" id="ammount-input" placeholder="0" min="1" max="100000000000000000000000000000000000000000000000000">
+    <h5>Currency To Convert from:</h5>
+    <input type="radio" name="radio-input" id="bgn-input">
+    <label for="">Bulgarian Lev</label>
+    <br>
+    <input type="radio" name="radio-input" id="eur-input">
+    <label for="">Euro</label>
+    <br>
+    <input type="radio" name="radio-input" id="usd-input">
+    <label for="">US Dollar</label>
+    <br>
+    <input type="radio" name="radio-input" id="gbp-input">
+    <label for="">Great Brititsh Pound</label>
+    <h5>Currency To Convert to:</h5>
+    <input type="radio" name="radio-output" id="bgn-output">
+    <label for="">Bulgarian Lev</label>
+    <br>
+    <input type="radio" name="radio-output" id="eur-output">
+    <label for="">Euro</label>
+    <br>
+    <input type="radio" name="radio-output" id="usd-output">
+    <label for="">US Dollar</label>
+    <br>
+    <input type="radio" name="radio-output" id="gbp-output">
+    <label for="">Great Brititsh Pound</label>
+    <br><br>
+    <button id="submit" onclick="ConvertCurrency()">Submit</button>
+    <button id="clear" onclick="Clear()">Clear</button>
+    <p>Your result:</p>
+    <p id="result-output">No result</p>
+</body>
+</html>
